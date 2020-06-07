@@ -9,7 +9,9 @@
     <arg name="model" value="$(arg model)" />
   </include>
 
-  <node name="map_server" pkg="map_server" type="map_server" args="/home/ron/tb3_ws/tb3_house.yaml">
+  <!-- <node name="map_server" pkg="map_server" type="map_server" args="/home/ron/tb3_ws/tb3_house.yaml"> -->
+  <node name="map_server" pkg="map_server" type="map_server" args="/home/ron/tb3_ws/wrs_map.yaml">
+
       <param name="frame_id" value="map"/>
   </node>
 
@@ -29,11 +31,11 @@
     <param name="odom_alpha2" value="0.2"/>
 
     <!-- set init position of the robot -->
-    <param name="initial_pose_x" value="-4.0"/>
-    <param name="initial_pose_y" value="0.5"/>
-    <param name="initial_pose_a" value="0.0"/>
-    <param name="initial_cov_xx" value="10.0"/>
-    <param name="initial_cov_yy" value="10.0"/>
+    <param name="initial_pose_x" value="9.0"/>
+    <param name="initial_pose_y" value="-1.0"/>
+    <param name="initial_pose_a" value="1.5707963268"/>
+    <param name="initial_cov_xx" value="20.0"/>
+    <param name="initial_cov_yy" value="20.0"/>
     <!-- <param name="initial_cov_aa" value="10.0"/> -->
 
     <!-- translation std dev, m -->
